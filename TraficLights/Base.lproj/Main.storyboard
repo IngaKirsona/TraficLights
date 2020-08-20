@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TraficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8q-6H-Sqd">
-                                <rect key="frame" x="131" y="776" width="152" height="50"/>
+                                <rect key="frame" x="111.66666666666669" y="692" width="152" height="50"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IsT-d9-dSb"/>
@@ -27,11 +27,11 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="StartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pdc-vI-F63"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ay-9W-FS8"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdq-XU-NUw">
-                                <rect key="frame" x="157" y="191" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="191" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Itf-KD-PwP"/>
@@ -39,7 +39,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQL-al-f0e">
-                                <rect key="frame" x="157" y="465" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="465" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2f8-Fh-2AX"/>
@@ -47,7 +47,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIH-8P-h90">
-                                <rect key="frame" x="157" y="328" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="328" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5qx-j8-vyQ"/>
@@ -69,7 +69,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="startButton" destination="z8q-6H-Sqd" id="JXv-Xv-1Te"/>
+                        <outlet property="greenButton" destination="iQL-al-f0e" id="8tU-hY-f85"/>
+                        <outlet property="redButton" destination="bdq-XU-NUw" id="kah-lo-cHZ"/>
+                        <outlet property="startButton" destination="z8q-6H-Sqd" id="KgW-Cw-fLh"/>
+                        <outlet property="yellowButton" destination="VIH-8P-h90" id="fev-wT-mhz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

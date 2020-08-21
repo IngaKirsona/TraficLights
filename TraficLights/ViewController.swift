@@ -29,43 +29,29 @@ class ViewController: UIViewController {
     @IBAction func startButton(_ sender: Any) {
     if isTapped == 0 {
         self.startButton.setTitle("NEXT", for:.normal)
-        self.redButton.backgroundColor = UIColor.orange
+        self.redButton.backgroundColor = UIColor.red
+        self.yellowButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
+        self.greenButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
         isTapped = 1
     }else if isTapped == 1 {
         self.startButton.setTitle("NEXT", for:.normal)
-        redButton.backgroundColor = UIColor.red
-        self.yellowButton.backgroundColor = UIColor.orange
+        self.yellowButton.backgroundColor = UIColor.yellow
+        redButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
+        self.greenButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
         isTapped = 2
     }else if isTapped == 2 {
         self.startButton.setTitle("NEXT", for:.normal)
-        greenButton.backgroundColor = UIColor.orange
-        self.yellowButton.backgroundColor = UIColor.yellow
+        self.greenButton.backgroundColor = UIColor.green
+        self.redButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
+        self.yellowButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
         isTapped = 3
     }else if isTapped == 3 {
         self.startButton.setTitle("NEXT", for:.normal)
-        self.redButton.backgroundColor = UIColor.orange
-        greenButton.backgroundColor = UIColor.green
+        self.redButton.backgroundColor = UIColor.red
+        self.yellowButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
+        self.greenButton.backgroundColor = UIColor (white: 1, alpha: 0.1)
         isTapped = 1
         }
     }
 }
     
-
-/*@IBAction func darkModeTapped(_ sender: Any) {
-        if isOn {
-            print("Dark mode on")
-            self.isOn = false
-            self.darkModeButton.setTitle("Dark Mode On", for: .normal)
-            self.darkModeButton.setTitleColor(UIColor.white, for: .normal)
-            self.view.backgroundColor = UIColor.black
-        }else{
-            print("Dark mode off")
-            self.isOn = true
-            self.darkModeButton.setTitle("Dark Mode Of", for: .normal)
-            self.darkModeButton.setTitleColor(UIColor.black, for: .normal)
-            self.view.backgroundColor = UIColor.white
-        }
-    }
-}
-
-*/
